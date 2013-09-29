@@ -8,7 +8,7 @@ from sklearn import linear_model
 def main():
     data = pd.read_csv('US_life_expectany.csv')
     x = data['Year']
-    y = data['US LE']
+    y = data['US_life_expectancy']
 
     # sklearn's linear regressor wants data as an array of arrays
     x_train = np.array([[i] for i in x])
