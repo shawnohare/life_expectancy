@@ -30,6 +30,7 @@ def main():
     ax.plot(x, regr.predict(x_train), color='green', linewidth=2, label='Regression line')
     ax.legend(loc='best')
     fig.savefig('lr_life_expectancy.svg')
+    fig.savefig('lr_life_expectancy.png')
     plt.show()
 
 if __name__ == "__main__":
